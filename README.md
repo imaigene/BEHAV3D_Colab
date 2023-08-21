@@ -31,12 +31,7 @@ However any type of time-lapse data can be processed with the pipeline, includin
 In this repository we provide example datasets consisting of a multispectral time-lapse 3D imaging dataset originated from a co-culture of engeneered T cells and Tumor derived organoids from the BEHAV3D [original paper](https://www.nature.com/articles/s41587-022-01397-w). Multispectral imaging allows to identify: Live/dead T cells; Live/Dead organoids. For downstream analysis of organoids: Either individual tumor derived organoids are tracked overtime or the total organoid volume per well is tracked. For each generated object we acquire information on the dead cell dye intensity and position and volume of individual organoids. For downstream analysis of T cell: T cells are tracked overtime. For each Tracked T cell object we aquire, position per timepoint, speed, square displacement, distance to an organoid, dead dye intensity, major and minor axis length (used in some downstream analysis).
 
 ## Set-up
-BEHAV3D uses 2 specific fiels to customize the analysis:\
-
-### **BEHAV3D config**
-Contains all experiment-specific settings and paths to data for all modules in BEHAV3D\
-An example version can be found in [...BEHAV3D/configs/config_template.yml](https://github.com/RiosGroup/BEHAV3D/blob/main/configs/config_template.yml)\
-Explanation on what each variable changes is commented in that template
+BEHAV3D uses one specific field to customize the analysis:\
 
 ### **Experimental metadata template**
 To correctly import data for BEHAV3D, it is required to fill in a .tsv that contains information per experiment performed, requiring information on:
