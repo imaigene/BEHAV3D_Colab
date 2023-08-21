@@ -62,7 +62,7 @@ There are 2 demos:
 - tcell_demo    (For 'tcell_dynamics_classification' )
 - organoid_demo (For 'organoid_death_dynamics')
 
-**>Step 1** To set up the demo in Google Colab, run [BEHAV3D/demos/set_up_demo.R](https://github.com/RiosGroup/BEHAV3D/blob/main/demos/set_up_demo.R)\
+**>Step 1** To set up the demo in Google Colab, run [BEHAV3D/demos/set_up_demo.R](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/demos/set_up_demo.R)\
 This sets up the paths in the BEHAV3D config file for the demo, then run the different modules on the demo (look below).
 
 ## Modules
@@ -72,7 +72,7 @@ This module examines the organoid death over time (individual organoids and per 
 
 ***To run from Google Colab:***
 
-**>Step 1** For demo mode run [organoid_death_dynamics script](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/DeathDinamicsOrganoids.ipynb)
+**>Step 2** For demo mode run [organoid_death_dynamics script](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/DeathDinamicsOrganoids.ipynb)
 
 
 ***Output_files***
@@ -98,7 +98,7 @@ Filtered organoid death dynamics based on BEHAV3D config
 This module examines the tcell dynamics and either performs clustering (no randomforest supplied) or classifcation (randomforest supplied)
 
 ***To run from Google Colab***\
-**>Step 2** For demo run  [predict_tcell_behavior](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/PredictBehaviourTcell.ipynb)
+**>Step 3** For demo run  [predict_tcell_behavior](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/PredictBehaviourTcell.ipynb)
 
 ***Output_files***
 
@@ -138,4 +138,4 @@ Rscript ...BEHAV3D/scripts/tcell_dynamics_classification/train_randomforest/trai
 This module allows you to export the classified T cell tracks to visualize them in Imaris.
 
 ***To run from Google Colab***\
-**>Step 3** For demo run  the [backprojection_tcell_classification](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/BackprojectionTcell.ipynb) script to save the behavioral classification for each processed T cell. This can then be uploaded in Imaris via the tracks search module.
+**>Step 4** For demo run  the [backprojection_tcell_classification](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/BackprojectionTcell.ipynb) script to save the behavioral classification for each processed T cell. This can then be uploaded in Imaris via the tracks search module.
