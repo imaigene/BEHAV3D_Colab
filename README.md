@@ -1,19 +1,6 @@
-# Welcome to this tool that uses Google Colab, to analyze your data. We combine both R and Python. Depending on the analisis you want to run, please use any of the 4 tools implemented:
-1) Backprojection of T cell:
-
-2) Death Dinamics of Organoids:
-
-3) T cells Behaviour Prediction:
-
-4) T cell Random Forest Model:
-
-Also, you have another file that contains a version that runs using GPU (scratch version) that uses PararelDTW.
-
-
-
-# BEHAV3D pipeline
+# BEHAV3D Colab pipeline
 ## Overview
-BEHAV3D is dynamic immuno-organoid 3D imaging-transcriptomics platform to study tumor death dynamics; immune cell behavior and behavior-guided transcriptomics.
+BEHAV3D is dynamic immuno-organoid 3D imaging-transcriptomics platform to study tumor death dynamics; immune cell behavior and behavior-guided transcriptomics. On a user friendly way through Google Colab. Data can be located in local or in Google Drive.
 
 ## What type of data does BEHAV3D work with?
 - Any type of multispectral time-lapse 3D (or 2D) imaging data, where objects such as tumor cells or tumor organoids are in co-culture with immune cells of interest.
@@ -26,54 +13,11 @@ BEHAV3D is dynamic immuno-organoid 3D imaging-transcriptomics platform to study 
 ## How to cite this pipeline
 Dekkers JF*, Alieva M*, Cleven A, Keramati F, Wezenaar AKL, van Vliet EJ, Puschhof J, Brazda P, Johanna I, Meringa AD, Rebel HG, Buchholz MB, Barrera Román M, Zeeman AL, de Blank S, Fasci D, Geurts MH, Cornel AM, Driehuis E, Millen R, Straetemans T, Nicolasen MJT, Aarts-Riemens T, Ariese HCR, Johnson HR, van Ineveld RL, Karaiskaki F, Kopper O, Bar-Ephraim YE, Kretzschmar K, Eggermont AMM, Nierkens S, Wehrens EJ, Stunnenberg HG, Clevers H, Kuball J, Sebestyen Z, Rios AC. **Uncovering the mode of action of engineered T cells in patient cancer organoids**. * *equal contibution* Nat Biotechnol. 2023 Jan https://doi.org/10.1038/s41587-022-01397-w
 ## Software and Hardware requirements
-BEHAV3D runs in R studio or from command line and was tested on MacOS Big Sur with R version 4.1.1 and on Windows 10 with R version 4.3.0.
-
-The main hardware requirements are for Imaris image processing, which could require decent hardware. The BEHAV3D analysis pipeline can be run on any decent computer
-
-For image analysis we made use of a workstation with the following specs:
-| | |
-| ------------- | ------------- |
-| GPU |		NVIDIA Quadro P4000 |
-| Processor | **2**	Intel(R) Xeon(R) Gold 5122 CPU @ 3.60GHz  |
-| RAM |	1.00 TB |
-|System | type	64-bit operating system, x64-based processor |
-
+Google Colab offers a virtual machine that allows for the use of its servers to run without any Software and Hardware requirements. Part of the code will run with CPU and other parts will run with GPU.
 
 ## Installation
-Download the repository to your PC via direct dowload or git clone https://github.com/RiosGroup/BEHAV3D in Git Bash.\
-Installation should take <15 minutes
+Download the script that you want to run, the format will be ".ipynb" and then open it in Google Colab in the Drive where you want to run the code, preferibly, in the Drive that you have your data.
 
-BEHAV3D uses the following R libraries (version used with R 4.3.0) :
-| Package  | Version |
-| ------------- | ------------- |
-| abind  | 1.4-5  |
-| dplyr  | 1.1.2  |
-| dtwclust  | 5.5.12  |
-| ggplot2  | 1.1.2  |
-| gplots  | 1.4-5  |
-| MESS  | 0.5.9  |
-| optparse  | 1.7.3  |
-| parallel  | 4.3.0  |
-| pheatmap  | 1.0.12  |
-| plyr  | 1.8.8  |
-| randomForest  | 4.7-1.1  |
-| readr  | 2.1.4  |
-| reshape2  | 1.4.4  |
-| scales  | 1.2.1  |
-| Seurat  | 4.3.0  |
-| spatstat  | 3.0-6  |
-| sp  | 1.6-1  |
-| stats  | 4.3.0  |
-| tibble  | 3.2.1  |
-| tidyr  | 1.3.0  |
-| umap  | 0.2.10.0  |
-| viridis  | 0.6.3  |
-| xlsx  | 0.6.5  |
-| yaml  | 2.3.7  |
-| zoo  | 1.8-12  |
-
-
-Java installation is required for the functioning of some packages: https://www.java.com/en/download/manual.jsp
 ## Input data
 The current version of the pipeline works with objects (cells or organoids) time-lapse statistics that are aquired by tracking these objects in a commercially available software (Imaris, Oxford Instruments).
 However any type of time-lapse data can be processed with the pipeline, including measruements extract from MTrackJ (Fiji) or others. Main feature that is needed are coordinates for the objects and a common ID for the same object that is tracked over time. Aditional statistics describing the cell behavior such as speed, displacement are calculated by Imaris, however they can also be calculate by pre-processing algorithms from the cell coordinates. Statistics related to the expression of markers of interest (e.g live-dead cell dye) should be included to study the dynamic expression of these overtime. For statistics related to distance to organoids, use the *min_intensity in ch X* (corresponding to the channel number created by the Distance transformation Xtension. Rename it to be called *dist_org*.
@@ -81,11 +25,7 @@ However any type of time-lapse data can be processed with the pipeline, includin
 ## Dataset example
 In this repository we provide example datasets consisting of a multispectral time-lapse 3D imaging dataset originated from a co-culture of engeneered T cells and Tumor derived organoids from the BEHAV3D [original paper](https://www.nature.com/articles/s41587-022-01397-w). Multispectral imaging allows to identify: Live/dead T cells; Live/Dead organoids. For downstream analysis of organoids: Either individual tumor derived organoids are tracked overtime or the total organoid volume per well is tracked. For each generated object we acquire information on the dead cell dye intensity and position and volume of individual organoids. For downstream analysis of T cell: T cells are tracked overtime. For each Tracked T cell object we aquire, position per timepoint, speed, square displacement, distance to an organoid, dead dye intensity, major and minor axis length (used in some downstream analysis).
 
-## Repository
-This repository contains a collection of scripts and example datasets enabling the following dowstream analysis. Follow the structure in the script folder for each module and each analysis type. Introduce the corresponding folder/ file direction on your own computer where required (note that to specify directory paths in R (/) forward slash is recommended):
-
 ## Set-up
-
 BEHAV3D uses 2 specific fiels to customize the analysis:\
 
 ### **BEHAV3D config**
@@ -116,7 +56,7 @@ For an example see: [...BEHAV3D/configs/metadata_template.tsv](https://github.co
 
 ## Demo
 
-You can run BEHAV3D on demo data to see examples of the results. This will take <15 minutes\
+You can run BEHAV3D on demo data to see examples of the results. This will take <30 minutes\
 \
 There are 2 demos:
 - tcell_demo    (For 'tcell_dynamics_classification' )
