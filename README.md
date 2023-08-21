@@ -52,7 +52,7 @@ To correctly import data for BEHAV3D, it is required to fill in a .tsv that cont
 - tumor_name (name of the tumor/organoids surfaces that were created with imaris, only required if you Object-Object statistics to import the distance to tumor data)
 - Object_distance (TRUE if Object-Object statistics were used to import the data related to T cell distance to tumor cells/ FALSE if distance transformation was for this step )
 
-For an example see: [...BEHAV3D/configs/metadata_template.tsv](https://github.com/RiosGroup/BEHAV3D/blob/main/configs/metadata_template.tsv)\
+For an example see: [...BEHAV3D/configs/metadata_template.tsv](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/configs/metadata_template.tsv)\
 
 ## Demo
 
@@ -72,8 +72,8 @@ This module examines the organoid death over time (individual organoids and per 
 
 ***To run from Google Colab:***
 
-**>Step 2** For demo mode run [organoid_death_dynamics script](https://github.com/RiosGroup/BEHAV3D/blob/main/scripts/organoid_death_dynamics/organoid_death_dynamics.R)
-If you have your own new data in a different folder, change the path to the **BEHAV3D config** file on [line 18](https://github.com/RiosGroup/BEHAV3D/blob/main/scripts/organoid_death_dynamics/organoid_death_dynamics.R#L18)
+**>Step 1** For demo mode run [organoid_death_dynamics script](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/DeathDinamicsOrganoids.ipynb)
+
 
 ***Output_files***
 
@@ -98,10 +98,7 @@ Filtered organoid death dynamics based on BEHAV3D config
 This module examines the tcell dynamics and either performs clustering (no randomforest supplied) or classifcation (randomforest supplied)
 
 ***To run from Google Colab***\
-**>Step 3** For demo run  [predict_tcell_behavior](https://github.com/RiosGroup/BEHAV3D/blob/main/scripts/tcell_dynamics_classification/predict_tcell_behavior.R)
-If you want to run new data in a different folder, change the path to the corresponding **BEHAV3D config** file on [line 27](https://github.com/RiosGroup/BEHAV3D/blob/main/scripts/tcell_dynamics_classification/predict_tcell_behavior.R#L27)\
-(Optional) Change the force_redo parameter on [line 16](https://github.com/RiosGroup/BEHAV3D/blob/main/scripts/tcell_dynamics_classification/predict_tcell_behavior.R#L16)\
-(Optional) Change the for parameter on [line 17](https://github.com/RiosGroup/BEHAV3D/blob/main/scripts/tcell_dynamics_classification/predict_tcell_behavior.R#L17)
+**>Step 2** For demo run  [predict_tcell_behavior](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/PredictBehaviourTcell.ipynb)
 
 ***Output_files***
 
@@ -134,10 +131,11 @@ quality control:
 ```
 Rscript ...BEHAV3D/scripts/tcell_dynamics_classification/train_randomforest/train_random_forest_classifier.R -i </Path/to/behavioral/reference/map> -o </Path/to/output/randomForest>
 ```
-- or change the [input parameter](https://github.com/RiosGroup/BEHAV3D/blob/main/scripts/tcell_dynamics_classification/train_randomforest/train_random_forest_classifier.R#L14) and [output parameter](https://github.com/RiosGroup/BEHAV3D/blob/main/scripts/tcell_dynamics_classification/train_randomforest/train_random_forest_classifier.R#L15)
+- or change the [input parameter](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/RandomForest_Tcell.ipynb)
+
 ### (3) T cell behavioral classification backprojection module
 
 This module allows you to export the classified T cell tracks to visualize them in Imaris.
 
 ***To run from Google Colab***\
-**>Step 4** For demo run  the [backprojection_tcell_classification](https://github.com/RiosGroup/BEHAV3D/blob/main/scripts/tcell_dynamics_classification/backprojection_tcell_classification.R) script to save the behavioral classification for each processed T cell. This can then be uploaded in Imaris via the tracks search module.
+**>Step 3** For demo run  the [backprojection_tcell_classification](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/BackprojectionTcell.ipynb) script to save the behavioral classification for each processed T cell. This can then be uploaded in Imaris via the tracks search module.
