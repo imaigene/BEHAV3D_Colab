@@ -63,7 +63,7 @@ There are 2 demos:
 ## Modules
 ## A) General View:
 
-| Running a ZeroCostDL4Mic notebook | Example data in ZeroCostDL4Mic | Romain's talk @ Aurox conference | Talk @ SPAOM |
+| Organoids Death Dynamics | T cell Backprojection | T cell Behaviour Prediction | Random Forest |
 |:-:|:-:|:-:|:-:|
 | [![](https://github.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Wiki_files/ZeroCostDL4Mic_SuppVideo1_Running_a_notebook.jpg)](https://youtu.be/TrDuidvO85s) | [![](https://github.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.jpg)](https://youtu.be/KauKEr0Kkkc) | [![](https://github.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Wiki_files/ScreenShot_AuroxTalk_resized.jpg)](https://youtu.be/rCEbYOnNJp0) | [![](https://github.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Wiki_files/ZDL4_SPAOM.jpg)](https://www.youtube.com/watch?v=ozffChqtgJw) |
 
