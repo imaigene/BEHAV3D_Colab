@@ -132,11 +132,5 @@ This module allows you to export the classified T cell tracks to visualize them 
 - To **edit a cell**, double click on the text. This will show you either the source code (in code cells) or the source text (in text cells).
 - You can use the **`#`**-mark in code cells to comment out parts of the code. This allows you to keep the original code piece in the cell as a comment.
 
-
-### **Select your parameters and paths**",
-        "---"
-##### **1. Setting main training parameters**
-**Paths for training, predictions and results**: 
-- **`Training_source:`, `Training_target`:** These are the paths to your folders containing the Training_source and Training_target training data respecively. To find the paths of the folders containing the respective datasets, go to your Files on the left of the notebook, navigate to the folder containing your files and copy the path by right-clicking on the folder. **Copy path** and pasting it into the right box below.
-- **`model_name`:** Use only my_model -style, not my-model (Use \"_\" not \"-\"). Do not use spaces in the name. Avoid using the name of an existing model (saved in the same folder) as it will be overwritten.
-- **`model_path`**: Enter the path where your model will be saved once trained (for instance your result folder).
+### Download your predictions**
+**Store your data** and ALL its results elsewhere by downloading it from Google Drive and after that clean the original folder tree (datasets, results, trained model etc.) if you plan to train or use new networks. Please note that the notebook will otherwise **OVERWRITE** all files which have the same name.
