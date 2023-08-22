@@ -127,7 +127,7 @@ This module allows you to export the classified T cell tracks to visualize them 
 ***To run from Google Colab***\
 **>Step 3** For demo run  the [backprojection_tcell_classification](https://colab.research.google.com/drive/10icFW3jdo3-mbC_XfUTXXSTeRTTc0yU1) script to save the behavioral classification for each processed T cell. This can then be uploaded in Imaris via the tracks search module.
 
-### **Making changes to the notebook**,
+### **Making changes to the notebook**
 - **You can make a copy** of the notebook and save it to your Google Drive. To do this click file -> save a copy in drive.
 - To **edit a cell**, double click on the text. This will show you either the source code (in code cells) or the source text (in text cells).
 - You can use the **`#`**-mark in code cells to comment out parts of the code. This allows you to keep the original code piece in the cell as a comment.
