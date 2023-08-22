@@ -114,14 +114,6 @@ quality control:
 - TouchingvsNontouching_distribution.pdf    (Shows the number of Touching vs. Non-Touching T cells based on the defined "tcell_contact_threshold")
 - DeadDye_distribution.pdf (Shows the distribution of mean dead dye intensity in Tcells per experiment, can be used to set correct "tcell_dead_dye_threshold" for dead cells)
 
-### ***(Optional) You can (re)train the randomforest with the following steps***
-- Run ...BEHAV3D/scripts/tcell_dynamics_classification/predict_tcell_behavior.R
-- Run ...BEHAV3D/scripts/tcell_dynamics_classification/train_randomforest/train_random_forest_classifier.R from command line
-```
-Rscript ...BEHAV3D/scripts/tcell_dynamics_classification/train_randomforest/train_random_forest_classifier.R -i </Path/to/behavioral/reference/map> -o </Path/to/output/randomForest>
-```
-- or change the [input parameter](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/RandomForest_Tcell.ipynb)
-
 ### (3) T cell behavioral classification backprojection module
 
 This module allows you to export the classified T cell tracks to visualize them in Imaris.
