@@ -15,14 +15,6 @@ Dekkers JF*, Alieva M*, Cleven A, Keramati F, Wezenaar AKL, van Vliet EJ, Puschh
 ## Software and Hardware requirements
 Google Colab offers a virtual machine that allows for the use of its servers to run without any Software and Hardware requirements. Part of the code will run with CPU and other parts will run with GPU.
 
-## Installation
-Download the script that you want to run, the format will be ".ipynb" and then open it in Google Colab in the Drive where you want to run the code, preferibly, in the Drive that you have your data.
-Depending on the analysis you want to carry out, you will have the following scripts available:
-- [Backprojection of T cells](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/BackprojectionTcell.ipynb)
-- [Behavioral prediction of T cells](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/DeathDinamicsOrganoids.ipynb)
-- [Random Forest for T cells](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/PredictBehaviourTcell.ipynb)
-- [Death Dynamics of Organoids](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/RandomForest_Tcell.ipynb)
-
 ## Input data
 The current version of the pipeline works with objects (cells or organoids) time-lapse statistics that are aquired by tracking these objects in a commercially available software (Imaris, Oxford Instruments).
 However any type of time-lapse data can be processed with the pipeline, including measruements extract from MTrackJ (Fiji) or others. Main feature that is needed are coordinates for the objects and a common ID for the same object that is tracked over time. Aditional statistics describing the cell behavior such as speed, displacement are calculated by Imaris, however they can also be calculate by pre-processing algorithms from the cell coordinates. Statistics related to the expression of markers of interest (e.g live-dead cell dye) should be included to study the dynamic expression of these overtime. For statistics related to distance to organoids, use the *min_intensity in ch X* (corresponding to the channel number created by the Distance transformation Xtension. Rename it to be called *dist_org*.
@@ -62,9 +54,6 @@ There are 2 demos:
 - tcell_demo    (For 'tcell_dynamics_classification' )
 - organoid_demo (For 'organoid_death_dynamics')
 
-**>Step 1** To set up the demo in Google Colab, run [BEHAV3D/demos/set_up_demo.R](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/demos/set_up_demo.R)\
-This sets up the paths in the BEHAV3D config file for the demo, then run the different modules on the demo (look below).
-
 ## Modules
 ### (1) Organoids death dynamics module
 
@@ -72,7 +61,7 @@ This module examines the organoid death over time (individual organoids and per 
 
 ***To run from Google Colab:***
 
-**>Step 2** For demo mode run [organoid_death_dynamics script](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/DeathDinamicsOrganoids.ipynb)
+**>Step 1** For demo mode run [organoid_death_dynamics script](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/DeathDinamicsOrganoids.ipynb)
 
 
 ***Output_files***
@@ -98,7 +87,7 @@ Filtered organoid death dynamics based on BEHAV3D config
 This module examines the tcell dynamics and either performs clustering (no randomforest supplied) or classifcation (randomforest supplied)
 
 ***To run from Google Colab***\
-**>Step 3** For demo run  [predict_tcell_behavior](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/PredictBehaviourTcell.ipynb)
+**>Step 2** For demo run  [predict_tcell_behavior](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/PredictBehaviourTcell.ipynb)
 
 ***Output_files***
 
@@ -138,4 +127,4 @@ Rscript ...BEHAV3D/scripts/tcell_dynamics_classification/train_randomforest/trai
 This module allows you to export the classified T cell tracks to visualize them in Imaris.
 
 ***To run from Google Colab***\
-**>Step 4** For demo run  the [backprojection_tcell_classification](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/BackprojectionTcell.ipynb) script to save the behavioral classification for each processed T cell. This can then be uploaded in Imaris via the tracks search module.
+**>Step 3** For demo run  the [backprojection_tcell_classification](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/BackprojectionTcell.ipynb) script to save the behavioral classification for each processed T cell. This can then be uploaded in Imaris via the tracks search module.
