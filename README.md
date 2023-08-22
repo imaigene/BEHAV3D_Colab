@@ -4,6 +4,12 @@ BEHAV3D is dynamic immuno-organoid 3D imaging-transcriptomics platform to study 
 
 ## What type of data does BEHAV3D work with?
 - Any type of multispectral time-lapse 3D (or 2D) imaging data, where objects such as tumor cells or tumor organoids are in co-culture with immune cells of interest.
+## How to upload files and what type of files does BEHAV3D accept?
+- You need to upload as many files ending with "_Statistics" with the unique ID or name as number of datasets you want to compare
+![image](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/assets/120657569/a86aec55-705e-48bb-87d2-bd8776b813fa)
+- Inside each folder uploaded you at least need to have the following statistics in a ".csv" format as shown in the following image:
+![image](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/assets/120657569/7fc0c82e-0eee-43ad-822c-b94133232578)
+
 ## What output can BEHAV3D provide?
 - Any type of change of cell state that can be detected by a change in fluorescent intensity e.g. cell death, reporter, Ca2+ signalling
 - Classification of different types of cell dynamics
@@ -51,8 +57,8 @@ For an example see: [...BEHAV3D/configs/metadata_template.tsv](https://github.co
 You can run BEHAV3D on demo data to see examples of the results. This will take <30 minutes\
 \
 There are 2 demos:
-- tcell_demo    (For 'tcell_dynamics_classification' )
-- organoid_demo (For 'organoid_death_dynamics')
+- tcell_demo    [For 'tcell_dynamics_classification'](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/tree/main/demos/tcell_demo)
+- organoid_demo [For 'organoid_death_dynamics'](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/tree/main/demos/organoid_demo)
 
 ## Modules
 ### (1) Organoids death dynamics module
