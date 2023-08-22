@@ -61,7 +61,7 @@ This module examines the organoid death over time (individual organoids and per 
 
 ***To run from Google Colab:***
 
-**>Step 1** For demo mode run [organoid_death_dynamics script](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/DeathDinamicsOrganoids.ipynb)
+**>Step 1** For demo mode run [organoid_death_dynamics script](https://colab.research.google.com/drive/1oA22RHC9Lk8_zlyGiFyr52_INAKT7QtR)
 
 
 ***Output_files***
@@ -84,10 +84,10 @@ Filtered organoid death dynamics based on BEHAV3D config
 
 ### (2) T cell behavior classification module
 
-This module examines the tcell dynamics and either performs clustering (no randomforest supplied) or classifcation (randomforest supplied)
+This module examines the tcell dynamics and either performs clustering (no randomforest supplied) or classifcation (randomforest supplied). To generate the [Random Forest](https://colab.research.google.com/drive/1mvMBMIDWYDIVDCgVJfjTeAww7aKr7g0b).
 
 ***To run from Google Colab***\
-**>Step 2** For demo run  [predict_tcell_behavior](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/PredictBehaviourTcell.ipynb)
+**>Step 2** For demo run  [predict_tcell_behavior](https://colab.research.google.com/drive/1v6jKiE9nE8yFwgWKiRlINKyO5YCLFQHJ)
 
 ***Output_files***
 
@@ -119,4 +119,4 @@ quality control:
 This module allows you to export the classified T cell tracks to visualize them in Imaris.
 
 ***To run from Google Colab***\
-**>Step 3** For demo run  the [backprojection_tcell_classification](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/scripts/BackprojectionTcell.ipynb) script to save the behavioral classification for each processed T cell. This can then be uploaded in Imaris via the tracks search module.
+**>Step 3** For demo run  the [backprojection_tcell_classification](https://colab.research.google.com/drive/10icFW3jdo3-mbC_XfUTXXSTeRTTc0yU1) script to save the behavioral classification for each processed T cell. This can then be uploaded in Imaris via the tracks search module.
