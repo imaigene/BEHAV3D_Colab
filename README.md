@@ -61,6 +61,13 @@ There are 2 demos:
 - organoid_demo [For 'organoid_death_dynamics'](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/tree/main/demos/organoid_demo)
 
 ## Modules
+## A) General View:
+
+| Running a ZeroCostDL4Mic notebook | Example data in ZeroCostDL4Mic | Romain's talk @ Aurox conference | Talk @ SPAOM |
+|:-:|:-:|:-:|:-:|
+| [![](https://github.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Wiki_files/ZeroCostDL4Mic_SuppVideo1_Running_a_notebook.jpg)](https://youtu.be/TrDuidvO85s) | [![](https://github.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.jpg)](https://youtu.be/KauKEr0Kkkc) | [![](https://github.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Wiki_files/ScreenShot_AuroxTalk_resized.jpg)](https://youtu.be/rCEbYOnNJp0) | [![](https://github.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Wiki_files/ZDL4_SPAOM.jpg)](https://www.youtube.com/watch?v=ozffChqtgJw) |
+
+## B) Specificities:
 ### (1) Organoids death dynamics module
 
 This module examines the organoid death over time (individual organoids and per well statistics)
