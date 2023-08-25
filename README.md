@@ -57,8 +57,8 @@ For an example see: [...BEHAV3D/configs/metadata_template.tsv](https://github.co
 You can run BEHAV3D on demo data to see examples of the results. This will take <30 minutes\
 \
 There are 2 demos:
-- tcell_demo    [For 'tcell_dynamics_classification'](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/tree/main/demos/tcell_demo)
-- organoid_demo [For 'organoid_death_dynamics'](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/tree/main/demos/organoid_demo)
+- tcell_demo    [For 'tcell_dynamics_classification'](https://github.com/imaigene/BEHAV3D_Colab/tree/main/demos/tcell_demo)
+- organoid_demo [For 'organoid_death_dynamics'](https://github.com/imaigene/BEHAV3D_Colab/tree/main/demos/organoid_demo)
 
 ## Modules
 ## A) General View:
