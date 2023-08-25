@@ -50,7 +50,7 @@ To correctly import data for BEHAV3D, it is required to fill in a .tsv that cont
 - tumor_name (name of the tumor/organoids surfaces that were created with imaris, only required if you Object-Object statistics to import the distance to tumor data)
 - Object_distance (TRUE if Object-Object statistics were used to import the data related to T cell distance to tumor cells/ FALSE if distance transformation was for this step )
 
-For an example see: [...BEHAV3D/configs/metadata_template.tsv](https://github.com/Alvaro-MirandadeLarra/BEHAV3D_Colab/blob/main/configs/metadata_template.tsv)\
+For an example see: [...BEHAV3D/configs/metadata_template.tsv](https://github.com/imaigene/BEHAV3D_Colab/blob/main/configs/metadata_template.tsv)\
 
 ## Demo
 
