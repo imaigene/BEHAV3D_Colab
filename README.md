@@ -65,7 +65,7 @@ There are 2 demos:
 
 | Organoids Death Dynamics | T cell Backprojection | T cell Behaviour Prediction | Random Forest |
 |:-:|:-:|:-:|:-:|
-| [![](https://github.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Wiki_files/ZeroCostDL4Mic_SuppVideo1_Running_a_notebook.jpg)](https://colab.research.google.com/drive/1oA22RHC9Lk8_zlyGiFyr52_INAKT7QtR) | [![](https://github.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Wiki_files/ZeroCostDL4Mic_SuppVideo2_Analysis_of_example_data.jpg)](https://colab.research.google.com/drive/10icFW3jdo3-mbC_XfUTXXSTeRTTc0yU1) | [![](https://github.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Wiki_files/ScreenShot_AuroxTalk_resized.jpg)](https://colab.research.google.com/drive/1v6jKiE9nE8yFwgWKiRlINKyO5YCLFQHJ) | [![](https://github.com/HenriquesLab/ZeroCostDL4Mic/blob/master/Wiki_files/ZDL4_SPAOM.jpg)](https://colab.research.google.com/drive/1mvMBMIDWYDIVDCgVJfjTeAww7aKr7g0b) |
+| [Colab Link](https://colab.research.google.com/drive/1oA22RHC9Lk8_zlyGiFyr52_INAKT7QtR) | [Colab Link](https://colab.research.google.com/drive/10icFW3jdo3-mbC_XfUTXXSTeRTTc0yU1) | [Colab Link](https://colab.research.google.com/drive/1v6jKiE9nE8yFwgWKiRlINKyO5YCLFQHJ) | [Colab Link](https://colab.research.google.com/drive/1mvMBMIDWYDIVDCgVJfjTeAww7aKr7g0b) |
 
 ## B) Specificities:
 ### (1) Organoids death dynamics module
